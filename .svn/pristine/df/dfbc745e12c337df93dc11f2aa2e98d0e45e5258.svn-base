@@ -1,0 +1,23 @@
+<!--pages/begin_evaluating/index.wxml-->
+<view class='img_box'>
+  <image src='../../images/wen@2x.png'></image>
+</view>
+
+<view class='container'>
+  <view>尊敬的投资者：</view>
+  <view>本问卷旨在协助投资者了解自身对投资风险的承受能力，为保护您的合法权益，请真实、准确、完整地填写本问卷，如因存在欺诈、隐瞒或其它不实陈述而导致评估结果与实际情况不符的，投资顾问不承担任何责任。投资者应购买与其风险偏好相适应的金融产品，若所选择本产品的风险等级高于其风险承受能力，经提示后仍选择投资的，视为投资者已充分了解该投资风险并愿意承担相应的风险。</view>
+
+  <view class='select'>
+    <view class='select_list clf'>
+      <view class='fl icon on'></view>
+      <view class='fl text'>年满18周岁，具有完全民事权利能力及完全民事行为能力的自然人；</view>
+    </view>
+    <view class='select_list clf'>
+      <view class='fl icon'></view>
+      <view class='fl text'>个人名下或夫妻共同拥有的银行存款、股票、 基金份额、资产管理计划、银行理财产品、信托计划、保险产品、期货权益等各类金融资产合计不低于人民币300万元。</view>
+    </view>
+  </view>
+
+  <view class='btn' bindtap="bindViewTap" >开始评测</view>
+</view>
+

@@ -1,0 +1,43 @@
+/* pages/my_questionnaire/index.wxss */
+.container {
+    padding: 0 40rpx 60rpx
+}
+
+.questionnaire_tit {
+    font-size: 34rpx;
+    color: #000
+}
+
+.questionnaire_tit span {
+    color: #43b2ff
+}
+
+.questionnaire_list {
+    height: 160rpx;
+    -moz-box-shadow: 0px 0px 3px #ccc;
+    -webkit-box-shadow: 0px 0px 3px #ccc;
+    box-shadow: 0px 0px 3px #ccc;
+    border-radius: 10rpx;
+    margin-top: 30rpx;
+    padding: 30rpx;
+    box-sizing: border-box
+}
+
+.questionnaire_list .img_box {
+    height: 100rpx;
+    width: 100rpx;
+    border-radius: 10rpx;
+    background-color: saddlebrown;
+    margin-right: 30rpx
+}
+
+.questionnaire_list .img_box image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10rpx
+}
+
+.questionnaire_text {
+    font-size: 30rpx;
+    color: 333
+}

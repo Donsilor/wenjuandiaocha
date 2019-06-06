@@ -1,0 +1,43 @@
+<view class='img_box'>
+    <image src='{{ResourceRootUrl}}{{questionnaireInfo.img_url}}'></image>
+</view>
+
+<view class='container'>
+
+    <view><text class="description">{{questionnaireInfo.description}}</text></view>
+
+    <!--<view class='select'>
+        <view class='select_list clf'>
+            <view class='fl icon on'></view>
+            <view class='fl text'>年满18周岁，具有完全民事权利能力及完全民事行为能力的自然人；</view>
+        </view>
+        <view class='select_list clf'>
+            <view class='fl icon'></view>
+            <view class='fl text'>个人名下或夫妻共同拥有的银行存款、股票、 基金份额、资产管理计划、银行理财产品、信托计划、保险产品、期货权益等各类金融资产合计不低于人民币300万元。</view>
+        </view>
+    </view>-->
+
+    <view>
+        <radio-group class="select" bindchange="radioChange">
+            <label class="select_list clf" wx:for="{{questionnaireInfo.participant_type}}" wx:key="id" wx:for-item="participantTypeInfo">
+                <radio class="radio-left" value="{{participantTypeInfo.id}}" />
+                <text class="radio-right">{{participantTypeInfo.content}}</text>
+            </label>
+
+            <label class="select_list clf">
+                <radio class="radio-left" value="0" />
+                <text class="radio-right">以上不符合</text>
+            </label>
+        </radio-group>
+
+        <!--<checkbox-group class="select" bindchange="checkboxChange">
+            <label class="select_list clf" wx:for="{{questionnaireInfo.participant_type}}" wx:key="id" wx:for-item="participantTypeInfo">
+                <checkbox class="radio-left" value="{{participantTypeInfo.id}}" />
+                <text class="radio-right">{{participantTypeInfo.content}}</text>
+            </label>
+        </checkbox-group>-->
+
+
+    </view>
+    <view class='btn' data-id="{{questionnairesInfo.id}}" data-url="../subject/index" bindtap="navigatorToUrl" >开始评测</view>
+</view>

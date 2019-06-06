@@ -1,0 +1,804 @@
+/**app.wxss**/
+
+.clear_f {
+    clear: both;
+}
+
+page {
+    font-size: 12px;
+}
+
+@charset "utf-8";
+/*html5 reset*/
+ul, li, ol, p {
+    list-style: none
+}
+
+h4, h5, em {
+    font-style: normal;
+    font-weight: 400
+}
+
+h3 {
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+    color: #4d525d;
+    text-decoration: none;
+}
+
+.hide {
+    display: none
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right;
+}
+
+.h_2 {
+    width: 100%;
+    height: 2.2rem;
+}
+
+
+/***workbench工作台***/
+.workbench_box {
+}
+
+.workbench_box .banner {
+    padding: 0 20rpx;
+}
+
+.workbench_box .banner image {
+    width: 100%;
+    height: 280rpx;
+    border-radius: 30rpx;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 10rpx 10rpx #ddd;
+}
+
+.workbench_box .section_box {
+    display: flex;
+    margin-top: 60rpx;
+    flex-wrap: wrap;
+}
+
+.workbench_box .section_box .section {
+    width: 25%;
+    height: 150rpx;
+    text-align: center;
+    margin-bottom: 40rpx;
+}
+
+.workbench_box .section_box .section view {
+    width: 100rpx;
+    height: 100rpx;
+    margin: 0 auto;
+}
+
+.workbench_box .section_box .section span {
+    display: block;
+    font-size: 30rpx;
+    height: 30rpx;
+    line-height: 30rpx;
+    margin-top: 20rpx;
+}
+
+
+.workbench_box .count_box .tit {
+    font-size: 32rpx;
+    width: 100%;
+    height: 36rpx;
+    line-height: 36rpx;
+    padding: 20rpx 20rpx 40rpx 20rpx;
+}
+
+.workbench_box .count_box {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 10rpx solid #eee;
+}
+
+.count_list {
+    width: 25%;
+    height: 190rpx;
+    text-align: center;
+    margin-bottom: 40rpx;
+}
+
+.count_list .loading h3 {
+    display: block;
+    font-size: 30rpx;
+    font-weight: 600;
+    padding-top: 25rpx;
+}
+
+.count_list .loading span {
+    display: block;
+    font-size: 24rpx;
+    color: #999;
+    font-weight: 400;
+}
+
+.count_list .loading {
+    margin: 0 auto;
+    width: 140rpx;
+    height: 140rpx;
+    position: relative;
+    margin-bottom: 18rpx;
+}
+
+.count_list .loading .progress {
+    position: absolute;
+    width: 120rpx;
+    height: 120rpx;
+    background-color: white;
+    border-radius: 50%;
+    left: 10rpx;
+    top: 10rpx;
+    text-align: center;
+}
+
+.count_list .left,
+.count_list .right {
+    width: 70rpx;
+    height: 140rpx;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    background-color: #ccc;
+}
+
+.count_list .left {
+    border-radius: 140rpx 0 0 140rpx;
+}
+
+.count_list .right {
+    border-radius: 0 140rpx 140rpx 0;
+}
+
+.count_list .left:after,
+.count_list .right:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 70rpx;
+    height: 140rpx;
+    background-color: white;
+    border-radius: 140rpx 0 0 140rpx;
+    background-color: red;
+}
+
+.count_list .right:after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-radius: 0 140rpx 140rpx 0;
+}
+
+.count_list .left:after {
+    transform-origin: right center;
+}
+
+.count_list .right:after {
+    transform-origin: left center;
+    transform: rotateZ(135deg);
+}
+
+/***统计区的颜色  start***/
+/*报备*/
+.baobei .left:after, .baobei .right:after {
+    background-color: #70c3b0;
+}
+
+.baobei h3 {
+    color: #70c3b0;
+}
+
+/*带看*/
+.daikan .left:after, .daikan .right:after {
+    background-color: #f1c253;
+}
+
+.daikan h3 {
+    color: #f1c253;
+}
+
+/*成交*/
+.chengjiao .left:after, .chengjiao .right:after {
+    background-color: #eb5d5d;
+}
+
+.chengjiao h3 {
+    color: #eb5d5d;
+}
+
+/*结佣*/
+.jieyong .left:after, .jieyong .right:after {
+    background-color: #50b1e5;
+}
+
+.jieyong h3 {
+    color: #50b1e5;
+}
+
+/*收藏*/
+.shouchang .left:after, .shouchang .right:after {
+    background-color: #eb5d5d;
+}
+
+.shouchang h3 {
+    color: #eb5d5d;
+}
+
+/*转发*/
+.zhuanfa .left:after, .zhuanfa .right:after {
+    background-color: #50b1e5;
+}
+
+.zhuanfa h3 {
+    color: #50b1e5;
+}
+
+/***统计区的颜色  end***/
+
+/***上传图片 start**/
+.section_img {
+    padding: 0 20rpx;
+    line-height: 90rpx;
+    font-size: 28rpx;
+    font-weight: 500;
+    margin-bottom: 20rpx;
+}
+
+.section_img span {
+    font-size: 24rpx;
+    color: red;
+}
+
+.section_img .upload_image {
+    display: flex;
+}
+
+.section_img .upload_image view {
+    width: 50%;
+    height: 162rpx;
+    position: relative;
+}
+
+.section_img .upload_image image {
+    width: 290rpx;
+    height: 162rpx;
+    background-color: #eee;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10rpx;
+}
+
+.section_img .upload_image span {
+    position: absolute;
+    left: 0;
+    top: 30rpx;
+    width: 100%;
+    text-align: center;
+    color: #999;
+    font-size: 26rpx;
+}
+/***上传图片 end**/
+
+/***后台房源上传图片**/
+.house_img{padding:0 20rpx;margin-bottom: 20rpx;}
+.house_img .tit{line-height: 90rpx;font-size: 28rpx;font-weight: 500;}
+.house_img .tit span{ font-size: 24rpx;color: red;}
+.house_img .image_box{display: flex;flex-wrap: wrap;}
+.house_img .image_box .image_li{position:relative;margin-right: 10rpx;width: 200rpx;text-align:center;}
+.house_img .image_box image{width: 200rpx;height:200rpx;background-color: #f2f2f2;}
+.house_img .image_box .image_li .img_dec{display: block;position: absolute; top:50%;margin-top: -40rpx; width: 100%;height: 40rpx;line-height: 40rpx;color: #777;}
+.house_img .image_box .image_li .img_dec span{display: block;}
+.house_img .image_box .image_li .hidden{display: none}
+
+/*checkbox 选项框大小  */
+checkbox .wx-checkbox-input {
+    width: 36rpx;
+    height: 36rpx;
+    border-radius: 50%;
+}
+
+/*checkbox选中后样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+    background: #1296db;
+}
+
+/*checkbox选中后图标样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+    width: 28rpx;
+    height: 28rpx;
+    line-height: 28rpx;
+    text-align: center;
+    font-size: 22rpx;
+    color: #fff;
+    background: transparent;
+    transform: translate(-50%, -50%) scale(1);
+    -webkit-transform: translate(-50%, -50%) scale(1);
+}
+
+
+/*图标字体样式  */
+@font-face {
+  font-family: 'iconfont';  /* project id 1053568 */
+  src: url('//at.alicdn.com/t/font_1053568_avx7222ikhk.eot');
+  src: url('//at.alicdn.com/t/font_1053568_avx7222ikhk.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1053568_avx7222ikhk.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1053568_avx7222ikhk.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1053568_avx7222ikhk.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1053568_avx7222ikhk.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dayin:before {
+  content: "\e611";
+}
+.icon-guanbi:before {
+  content: "\e641";
+}
+
+.icon-jiaruwomen:before {
+  content: "\e60f";
+}
+
+.icon-shequhuati:before {
+  content: "\e615";
+}
+
+.icon-shouji:before {
+  content: "\e7eb";
+}
+
+.icon-binggangaodian:before {
+  content: "\e634";
+}
+
+.icon-sousuo1:before {
+  content: "\e670";
+}
+
+.icon-bangzhuzhongxin:before {
+  content: "\e67d";
+}
+
+.icon-bangong1:before {
+  content: "\e621";
+}
+
+.icon-tongzhuangshui:before {
+  content: "\e66e";
+}
+
+.icon-zhuzhanicon17:before {
+  content: "\e612";
+}
+
+.icon-shouye:before {
+  content: "\e64d";
+}
+
+.icon-mayishangchengdaizhifudengicon10:before {
+  content: "\e61b";
+}
+
+.icon-shouji1:before {
+  content: "\e660";
+}
+
+.icon-weixin2:before {
+  content: "\e64f";
+}
+
+.icon-huati:before {
+  content: "\e609";
+}
+
+.icon-shezhi1:before {
+  content: "\e672";
+}
+
+.icon-guanbi:before {
+  content: "\e641";
+}
+
+.icon-jisuanqi:before {
+  content: "\e633";
+}
+
+.icon-kehuguanli:before {
+  content: "\e607";
+}
+
+.icon-yeji:before {
+  content: "\e652";
+}
+
+.icon-weibolu:before {
+  content: "\e67e";
+}
+
+.icon-gerenxinxi:before {
+  content: "\e624";
+}
+
+.icon-weixin1:before {
+  content: "\e63c";
+}
+
+.icon-shuangjiantouxiangxia:before {
+  content: "\e65f";
+}
+
+.icon-icon-shang:before {
+  content: "\e622";
+}
+
+.icon-mendian:before {
+  content: "\e60e";
+}
+
+.icon-ditie:before {
+  content: "\e613";
+}
+
+.icon-xiayibu1:before {
+  content: "\e64a";
+}
+
+.icon-xingxing1:before {
+  content: "\e60a";
+}
+
+.icon-xiala:before {
+  content: "\e6b3";
+}
+
+.icon-kongzhitai:before {
+  content: "\e78b";
+}
+
+.icon-xiezilou:before {
+  content: "\ea16";
+}
+
+.icon-icon-test:before {
+  content: "\e63a";
+}
+
+.icon-location:before {
+  content: "\e601";
+}
+
+.icon-fenxiang:before {
+  content: "\e610";
+}
+
+.icon-renzheng:before {
+  content: "\e603";
+}
+
+.icon-xinyongfen:before {
+  content: "\e65e";
+}
+
+.icon-jia:before {
+  content: "\e644";
+}
+
+.icon-dengjibaobeihezhun:before {
+  content: "\e608";
+}
+
+.icon-bingxiang:before {
+  content: "\e775";
+}
+
+.icon-weixin:before {
+  content: "\e629";
+}
+
+.icon-huatiselect:before {
+  content: "\e6ae";
+}
+
+.icon-yongjin:before {
+  content: "\e6a2";
+}
+
+.icon-arrow-down:before {
+  content: "\e664";
+}
+
+.icon-bangong:before {
+  content: "\e614";
+}
+
+.icon-bankexingxing:before {
+  content: "\e62b";
+}
+
+.icon-shoucang:before {
+  content: "\e60d";
+}
+
+.icon-mark_fuzhi:before {
+  content: "\e642";
+}
+
+.icon-weituo:before {
+  content: "\e66b";
+}
+
+.icon-shalou:before {
+  content: "\e628";
+}
+
+.icon-qingjie:before {
+  content: "\e619";
+}
+
+.icon-arrow-top:before {
+  content: "\e600";
+}
+
+.icon-xingxing:before {
+  content: "\e682";
+}
+
+.icon-cha:before {
+  content: "\e61a";
+}
+
+.icon-kafeiji:before {
+  content: "\e61f";
+}
+
+.icon-weishengjian:before {
+  content: "\e61d";
+}
+
+.icon-kefu:before {
+  content: "\e60b";
+}
+
+.icon-wode:before {
+  content: "\e605";
+}
+
+.icon-guojihezuoyuanqushuliang:before {
+  content: "\e8a6";
+}
+
+.icon-wodehuati:before {
+  content: "\e68c";
+}
+
+.icon-sousuo:before {
+  content: "\e606";
+}
+
+.icon-shoucang1:before {
+  content: "\e6fe";
+}
+
+.icon-jiarubanji:before {
+  content: "\e61c";
+}
+
+.icon-kongqijinghuaji:before {
+  content: "\e620";
+}
+
+.icon-jians:before {
+  content: "\e617";
+}
+
+.icon--hour-reception:before {
+  content: "\e6f8";
+}
+
+.icon-airconditioning:before {
+  content: "\e6f9";
+}
+
+.icon-Bars:before {
+  content: "\e6fa";
+}
+
+.icon-conferenceroom:before {
+  content: "\e6fb";
+}
+
+.icon-Childrenspool:before {
+  content: "\e6fc";
+}
+
+.icon-gymnasium:before {
+  content: "\e6fd";
+}
+
+.icon-Cafe:before {
+  content: "\e6ff";
+}
+
+.icon-garage:before {
+  content: "\e700";
+}
+
+.icon-Hairdresser:before {
+  content: "\e701";
+}
+
+.icon-lobby:before {
+  content: "\e702";
+}
+
+.icon-Pubs:before {
+  content: "\e703";
+}
+
+.icon-Lifts:before {
+  content: "\e704";
+}
+
+.icon-Newspaperkiosk:before {
+  content: "\e705";
+}
+
+.icon-tvroom:before {
+  content: "\e706";
+}
+
+.icon-WLANaccess:before {
+  content: "\e707";
+}
+
+.icon-arrr1:before {
+  content: "\e604";
+}
+
+.icon-kefu1:before {
+  content: "\e60c";
+}
+
+.icon-dianhua:before {
+  content: "\e602";
+}
+
+.icon-jiahaotianjia:before {
+  content: "\e623";
+}
+
+.icon-wodezuji:before {
+  content: "\e625";
+}
+
+.icon-laba:before {
+  content: "\e626";
+}
+
+.icon--xiala:before {
+  content: "\e627";
+}
+
+.icon-xiayibu:before {
+  content: "\e62a";
+}
+
+.icon-shouquan:before {
+  content: "\e62c";
+}
+
+.icon-dianhuazuoji:before {
+  content: "\e62d";
+}
+
+.icon-kuandai:before {
+  content: "\ec14";
+}
+
+.icon-jubao:before {
+  content: "\e62e";
+}
+
+.icon-xiaoxi:before {
+  content: "\e616";
+}
+
+.icon-dianhua1:before {
+  content: "\e618";
+}
+
+.icon-dianpu:before {
+  content: "\e61e";
+}
+
+.icon-shijian:before {
+  content: "\e62f";
+}
+
+.icon-yanjing:before {
+  content: "\e630";
+}
+
+.icon-yanjing1:before {
+  content: "\e631";
+}
+
+/****按钮样式*******/
+button{padding: 0;}
+.btn {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 14px;
+    padding-right: 14px;
+    box-sizing: border-box;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 2.55555556;
+    border-radius: 5px;
+    -webkit-tap-highlight-color: transparent;
+    overflow: hidden;
+    color: #000000;
+    background-color: #F8F8F8;
+}
+
+.btn-default {
+    color: #444;
+    background-color: #e6e6e6;
+    border-color: #e6e6e6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #fda214;
+    border-color: #fda214;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #50b5fd;
+    border-color: #50b5fd;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #5eb95e;
+    border-color: #5eb95e;
+}
+
+.btn-warning {
+    color: #fff;
+    background-color: #F37B1D;
+    border-color: #F37B1D;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #dd514c;
+    border-color: #dd514c;
+}
+
+

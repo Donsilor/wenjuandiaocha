@@ -1,0 +1,21 @@
+/* pages/grade/index.wxss */
+.container{position: relative;padding: 30rpx}
+.bg_img{width: 478rpx;height: 478rpx;background: url('https://szdbi.oss-cn-shenzhen.aliyuncs.com/shyongqing/ellipse%402x.png') no-repeat center;background-size: 100% 100%;position: absolute;left: 50%;transform: translateX(-50%);-webkit-transform: translateX(-50%);top: 0;z-index: -1}
+.bg_img .score{position: absolute;left: 50%;transform: translateX(-50%);-webkit-transform: translateX(-50%);top: 178rpx;font-size: 40rpx;color: #43b2ff;margin-left: 4rpx}
+
+.text_box{margin-top: 376rpx}
+.text_box .text{font-size: 30rpx;line-height: 40rpx;text-align: center;color: #333;}
+.text_box .text .color{color: #43b2ff;font-size: 40rpx;margin: 0 10rpx}
+
+.btn{width: 400rpx;height: 80rpx;background-color: #43b2ff;border-radius:40rpx;line-height: 80rpx;text-align: center;font-size: 34rpx;color: #fff;margin: 60rpx auto;letter-spacing: 12rpx}
+
+.standard{padding: 30rpx;box-shadow: 0 0 2rpx 4rpx #eee;border-radius: 10rpx}
+.standard .standard_tit{font-size: 30rpx;color: #333;}
+.standard .standard_list{margin-top: 58rpx}
+.standard .standard_list .dot{width: 10rpx;height: 10rpx;border-radius: 50%;margin: 14rpx 20rpx 0 0}
+.standard .standard_list .bgcolor{background-color: #333}
+.standard .standard_list .type{font-size: 30rpx;color: #333;width: 598rpx}
+.standard .standard_list .type .space{margin-left: 20rpx}
+.standard .standard_list .type .describe{width: 500rpx}
+
+.statement{font-size: 26rpx;line-height: 40rpx;color: #999;margin: 60rpx 0 90rpx}

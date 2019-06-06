@@ -1,0 +1,35 @@
+<!--pages/homepage/index.wxml-->
+<view class='container'>
+  <view class='questionnaire_list'>
+    <view class='img_box'>
+      <image src='../../images/wen@2x.png'></image>
+    </view>
+    <view class='tit'>风险风险承受能力评估问卷（个人投资者）</view>
+    <view class='btn' bindtap="bindViewTap" >开始问卷</view>
+  </view>
+
+  <view class='questionnaire_list'>
+    <view class='img_box'>
+      <image src='../../images/wen@2x.png'></image>
+    </view>
+    <view class='tit'>风险风险承受能力评估问卷（个人投资者）</view>
+    <view class='btn'>开始问卷</view>
+  </view>
+
+  <view class='questionnaire_list'>
+    <view class='img_box'>
+      <image src='../../images/wen@2x.png'></image>
+    </view>
+    <view class='tit'>风险风险承受能力评估问卷（个人投资者）</view>
+    <view class='btn'>开始问卷</view>
+  </view>
+
+  <view class='questionnaire_list'>
+    <view class='img_box'>
+      <image src='../../images/wen@2x.png'></image>
+    </view>
+    <view class='tit'>风险风险承受能力评估问卷（个人投资者）</view>
+    <view class='btn'>开始问卷</view>
+  </view>
+
+</view>

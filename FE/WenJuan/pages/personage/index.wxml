@@ -1,0 +1,52 @@
+<!--pages/personage/index.wxml-->
+<!--pages/fill_in/index.wxml-->
+<view class='container'>
+  <view class='fill'>
+    <view class='fill_list clf'>
+      <view class='fl left'>
+        <i class='color'>*</i>我的姓名
+      </view>
+      <view class='fl right'>李白</view>
+    </view>
+
+    <view class='fill_list clf'>
+      <view class='fl left'>
+        <i class='color'>*</i>联系方式
+      </view>
+      <view class='fl right'>13895846582</view>
+    </view>
+
+    <view class='fill_list clf'>
+      <view class='fl left'>
+        <i class='color'>*</i>年龄
+      </view>
+      <view class='fl right'>18</view>
+    </view>
+    <view class='fill_list clf'>
+      <view class='fl left'>证件类型</view>
+      <view class='fl right'>身份证</view>
+    </view>
+
+    <view class='fill_list clf'>
+      <view class='fl left'>证件号码</view>
+      <view class='fl right'>230121199205160403</view>
+    </view>
+    <view class='fill_list clf'>
+      <view class='fl left'>学历</view>
+      <view class='fl right'>大专</view>
+    </view>
+
+    <view class='fill_list clf'>
+      <view class='fl left'>职业</view>
+      <view class='fl right'>自由</view>
+    </view>
+  </view>
+
+  <view class='hint'>带<i class='color'>*</i>栏目为必填栏目</view>
+
+  <view class='btn_box'>
+    <view class='btn' bindtap="bindViewHomePage">返回首页</view>
+    <view class='btn next' bindtap="bindViewTap">完成</view>
+  </view>
+</view>
+

@@ -1,0 +1,64 @@
+<!--pages/fill_in/index.wxml-->
+<view class='container'>
+  <view class='fill'>
+    <view class='fill_list clf'>
+      <view class='fl left'>
+        <i class='color'>*</i>我的姓名
+      </view>
+      <view class='fl right'>
+        <input type='text' class='fr' placeholder='请输入您的姓名'></input>
+      </view>
+    </view>
+
+    <view class='fill_list clf'>
+      <view class='fl left'>
+        <i class='color'>*</i>联系方式
+      </view>
+      <view class='fl right'>
+        <input type='text' class='fr' placeholder='清输入联系方式'></input>
+      </view>
+    </view>
+
+    <view class='fill_list clf'>
+      <view class='fl left'>
+        <i class='color'>*</i>年龄
+      </view>
+      <view class='fl right'>
+        <input type='text' class='fr' placeholder='清输入您的年龄'></input>
+      </view>
+    </view>
+    <view class='fill_list clf'>
+      <view class='fl left'>证件类型</view>
+      <view class='fl right'>
+        <input type='text' class='fr' placeholder='' value='身份证' disabled></input>
+      </view>
+    </view>
+
+    <view class='fill_list clf'>
+      <view class='fl left'>证件号码</view>
+      <view class='fl right'>
+        <input type='text' class='fr' placeholder='请输入身份证号码'></input>
+      </view>
+    </view>
+    <view class='fill_list clf'>
+      <view class='fl left'>学历</view>
+      <view class='fl right'>
+        <input type='text' class='fr' placeholder='请输入学历'></input>
+      </view>
+    </view>
+
+    <view class='fill_list clf'>
+      <view class='fl left'>职业</view>
+      <view class='fl right'>
+        <input type='text' class='fr' placeholder='请输入您的职业'></input>
+      </view>
+    </view>
+  </view>
+
+  <view class='hint'>带<i class='color'>*</i>栏目为必填栏目</view>
+
+  <view class='btn_box'>
+    <view class='btn' bindtap="bindViewHomePage">返回首页</view>
+    <view class='btn next' bindtap="bindViewTap">下一步</view>
+  </view>
+</view>

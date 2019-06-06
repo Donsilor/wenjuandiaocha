@@ -1,0 +1,19 @@
+<!--pages/my/index.wxml-->
+<view class='img_box'>
+  <image class='bg_img' src='../../images/bg_img@2x.png'></image>
+  <view class='user_img'>
+    <image class='img' src=''></image>
+  </view>
+  <view class='user_name'>UI937</view>
+</view>
+
+<view class='box' bindtap="bindViewTap" data-url="../my_questionnaire/index">
+  <view class='fl ans' >
+    <image src='../../images/16@2x.png'></image>
+  </view>我的问卷
+</view>
+<view class='box' bindtap="bindViewTap" data-url="../personage/index">
+  <view class='fl mis'>
+    <image src='../../images/bangzhuzhongxin@2x.png'></image>
+  </view>个人信息
+</view>

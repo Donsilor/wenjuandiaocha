@@ -1,0 +1,70 @@
+<!--pages/grade/index.wxml-->
+<view class='container'>
+    <view class='bg_img'>
+        <span class='score'>{{answerResultScore.score}}分</span>
+    </view>
+    <view class='text_box'>
+        <view class='text'>评测结果：</view>
+        <view class='text'>经过测试您共得<span class='color'>{{answerResultScore.score}}</span>分</view>
+        <view class='text'>您属于<span class='color'>{{answerResultScore.assessment_result}}</span>投资者</view>
+    </view>
+
+    <view class='btn' bindtap="backToHomePage">返回首页</view>
+
+    <view class='standard'>
+        <view class='standard_tit'>评分标准：本评估问卷共10道题，每道题有A、B、C、D、E五个选项，对应分值依次为2分、4分、6分、8分、10分。</view>
+        <view class='standard_list'>
+            <view class='type clf'>
+                <span class='dot fl bgcolor'></span>保守型<span class='space'>20分≤得分≤35分</span>
+            </view>
+            <view class='type clf'>
+                <span class='dot fl'></span>
+                <span class='describe fl'>低风险等级</span>
+            </view>
+        </view>
+
+        <view class='standard_list'>
+            <view class='type clf'>
+                <span class='dot fl bgcolor'></span>稳健型<span class='space'>35分{{'<'}}得分≤50分</span>
+            </view>
+            <view class='type clf'>
+                <span class='dot fl'></span>
+                <span class='describe fl'>低风险和较低风险等级</span>
+            </view>
+        </view>
+
+        <view class='standard_list'>
+            <view class='type clf'>
+                <span class='dot fl bgcolor'></span>平衡型<span class='space'>50分{{'<'}}得分≤65分</span>
+            </view>
+            <view class='type clf'>
+                <span class='dot fl'></span>
+                <span class='describe fl'>低风险、较低风险和中风险等级</span>
+            </view>
+        </view>
+
+        <view class='standard_list'>
+            <view class='type clf'>
+                <span class='dot fl bgcolor'></span>成长型<span class='space'>65分{{'<'}}得分≤80分</span>
+            </view>
+            <view class='type clf'>
+                <span class='dot fl'></span>
+                <span class='describe fl'>低风险、较低风险、中风险和较高风险等级</span>
+            </view>
+        </view>
+
+        <view class='standard_list'>
+            <view class='type clf'>
+                <span class='dot fl bgcolor'></span>进取型<span class='space'>80分{{'<'}}得分≤100分</span>
+            </view>
+            <view class='type clf'>
+                <span class='dot fl'></span>
+                <span class='describe fl'>低风险、较低风险、中风险、较高风险和高风险等级</span>
+            </view>
+        </view>
+    </view>
+
+    <view class='statement'>免责声明：本评估问卷系根据业内通行做法设计，目的是根据被调查人填写问卷时所提供的信息评估其风险偏好，以此作为被调查人投资本产品的参考，投资者需对其填写信息的真实性、准确性负责，并自行承担投资风险。本评估问卷及评价结果仅供参考，投资顾问不对评估问卷的准确性及全面性负责，并有权根据需要调整评估问卷的内容及评价标准。</view>
+
+
+</view>

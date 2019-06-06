@@ -1,0 +1,17 @@
+/* pages/personage/index.wxss */
+.container{position: fixed;top: 0;left: 0;width: 100%;height: 100%;background-color: #f0f0f0}
+.container .color{color: #ff1919}
+
+.fill{width: 690rpx;background-color: #fff;border-radius: 20rpx;padding: 0 20rpx;box-sizing: border-box;margin: 30rpx}
+.fill .fill_list{height: 90rpx;font-size: 30rpx;line-height: 90rpx;}
+.fill .fill_list:not(:last-child){border-bottom: 1rpx solid #e5e5e5}
+
+.fill .fill_list .left{width: 200rpx;height: 90rpx;}
+.fill .fill_list .right{width: 450rpx;height: 90rpx;text-align: right}
+.fill .fill_list .right input{width: 400rpx;height: 90rpx;text-align: right;}
+
+.hint{font-size: 26rpx;color: #666;margin-left: 30rpx}
+
+.btn_box{display: flex;justify-content: space-around;margin-top: 60rpx}
+.btn_box .btn{width: 260rpx;height: 80rpx;background-color: #ccc;border-radius: 40rpx;line-height: 80rpx;text-align: center;color: #fff;font-size: 34rpx}
+.btn_box .next{background-color: #43b2ff}

@@ -1,0 +1,19 @@
+<!--pages/my/index.wxml-->
+<view class='img_box'>
+    <image class='bg_img' src='/images/bg_img@2x.png'></image>
+    <view class='user_img'>
+        <image class='img' src="{{ResourceRootUrl}}{{userInfo.avatar ? userInfo.avatar : 'default_avatar.png'}}"></image>
+    </view>
+    <view class='user_name'>{{userInfo.nickname}}</view>
+</view>
+
+<view class='box' bindtap="navigatorToUrl" data-url="/pages/my/questionnaires/index">
+<view class='fl ans' >
+    <image src='/images/16@2x.png'></image>
+</view>我的问卷
+</view>
+<view class='box' bindtap="navigatorToUrl" data-url="/pages/my/info/index">
+<view class='fl mis'>
+    <image src='/images/bangzhuzhongxin@2x.png'></image>
+</view>个人信息
+</view>

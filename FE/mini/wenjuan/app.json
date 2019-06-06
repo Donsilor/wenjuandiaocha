@@ -1,0 +1,50 @@
+{
+    "pages": [
+
+        "pages/index/index",
+
+
+        "pages/my/index/index",
+        "pages/my/info/index",
+        "pages/my/questionnaires/index",
+        "pages/my/questionnaires/result/index",
+
+        "pages/questionnaires/info/index",
+        "pages/questionnaires/personal/index",
+        "pages/questionnaires/subject/index",
+        "pages/questionnaires/result/index",
+        "pages/passport/login/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "问卷调查",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#a9b7b7",
+        "selectedColor": "#43b2ff",
+        "borderStyle": "black",
+        "backgroundColor": "#fff",
+        "list": [
+            {
+                "selectedIconPath": "images/home_on.png",
+                "iconPath": "images/home.png",
+                "pagePath": "pages/index/index",
+                "text": "首页"
+            },
+            {
+                "selectedIconPath": "images/my_on.png",
+                "iconPath": "images/my.png",
+                "pagePath": "pages/my/index/index",
+                "text": "我的"
+            }
+        ]
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于小程序位置接口的效果展示"
+        }
+    },
+    "sitemapLocation": "sitemap.json"
+}

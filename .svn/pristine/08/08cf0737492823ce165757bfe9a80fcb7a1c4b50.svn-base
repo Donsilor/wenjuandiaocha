@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/homepage/index",
+    "pages/my/index",
+    "pages/begin_evaluating/index",
+    "pages/fill_in/index",
+    "pages/quiz/index",
+    "pages/grade/index",
+    "pages/my_questionnaire/index",
+    "pages/personage/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#444",
+    "selectedColor": "#43b1f4",
+    "borderStyle": "black",
+    "backgroundColor": "#FFF",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/homepage/index",
+        "iconPath": "images/homepage@2x.png",
+        "selectedIconPath": "images/homepage_r@2x.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/my/index",
+        "iconPath": "images/personal@2x.png",
+        "selectedIconPath": "images/personal_r@2x.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

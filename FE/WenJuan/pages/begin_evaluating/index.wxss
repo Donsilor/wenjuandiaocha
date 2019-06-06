@@ -1,0 +1,11 @@
+/* pages/begin_evaluating/index.wxss */
+.img_box{width: 750rpx;height: 400rpx;position: relative;}
+.img_box image{width: 100%;height: 100%}
+.container{padding: 30rpx;font-size: 30rpx;color: #333;}
+
+.select .select_list{margin-top: 60rpx}
+.select .select_list .icon{width: 46rpx;height: 46rpx;border: 1rpx solid #ccc;border-radius: 50%;margin-right: 20rpx}
+.select .select_list .on{border-color: #43b2ff;background-color: #43b2ff}
+.select .select_list .text{width: 620rpx}
+
+.btn{width: 400rpx;height: 80rpx;background-color: rgba(67,178,255,0.5);border-radius: 40rpx;line-height: 80rpx;text-align: center;font-size: 34rpx;color: #fff;letter-spacing: 12rpx;margin: 90rpx auto}

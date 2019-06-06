@@ -1,0 +1,30 @@
+<!--pages/quiz/index.wxml-->
+<view class='container'>
+    <view class="lists-box">
+        <block  wx:for="{{subjectLists}}" wx:key="index" wx:for-item="subjectInfo">
+            <view class='subject-box'>
+                <view class='question'>{{index == 0 ? pageData.from : pageData.to}}.{{subjectInfo.title}}</view>
+                <view class='answer'>
+                    <radio-group  bindchange="radioChange" class="radio-box" data-id="{{subjectInfo.id}}">
+                        <block  wx:for="{{subjectInfo.options}}" wx:key="id" wx:for-item="subjectOptionsInfo">
+                            <label class="radio-list">
+                                <radio class="radio-left" value="{{subjectOptionsInfo.id}}"  checked="{{(answerResult[subjectInfo.id] == subjectOptionsInfo.id) ? true : false }}"  />
+                                <text class="radio-right">{{subjectOptionsInfo.option_title}}</text>
+                            </label>
+                        </block>
+                    </radio-group>
+                </view>
+            </view>
+        </block>
+    </view>
+
+
+    <view class="page-box">
+        <view class='page'>第<span>{{pageData.current_page}}</span>页 / 共<span>{{pageData.last_page}}</span>页</view>
+
+        <view class='btn_box'>
+            <view class='btn' bindtap='{{prevPageFuncName}}'>上一步</view>
+            <view class='btn on' bindtap='{{nextPageFuncName}}'>{{nextBtnName}}</view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,80 @@
+<!--pages/quiz/index.wxml-->
+<view class='container'>
+    <view class='question_list'>
+        <view class='question'>1、您家庭可支配年收入为（折合成人民币）？</view>
+        <view class='answer'>
+            <view class='answer_list'>
+                <span class='fl circle'>
+                    <i class='fl'></i>
+                </span>50万元以下
+            </view>
+
+            <view class='answer_list'>
+                <!-- 选择哪个就给哪个加样式on -->
+                <span class='fl circle on'>
+                    <i class='fl'></i>
+                </span>50万至100万元
+            </view>
+
+            <view class='answer_list'>
+                <span class='fl circle'>
+                    <i class='fl'></i>
+                </span>100万至500万元
+            </view>
+
+            <view class='answer_list'>
+                <span class='fl circle'>
+                    <i class='fl'></i>
+                </span>500万至1000万元
+            </view>
+
+            <view class='answer_list'>
+                <span class='fl circle'>
+                    <i class='fl'></i>
+                </span>1000万元以上
+            </view>
+        </view>
+    </view>
+
+    <view class='question_list'>
+        <view class='question'>2、在您每年的家庭可支配收入中，可用于金融投资（储蓄存款除外）的比例为？</view>
+        <view class='answer'>
+            <view class='answer_list'>
+                <span class='fl circle'>
+                    <i class='fl'></i>
+                </span>小于5%
+            </view>
+
+            <view class='answer_list'>
+                <span class='fl circle'>
+                    <i class='fl'></i>
+                </span>5%至20%
+            </view>
+
+            <view class='answer_list'>
+                <span class='fl circle'>
+                    <i class='fl'></i>
+                </span>20%至40%
+            </view>
+
+            <view class='answer_list'>
+                <span class='fl circle on'>
+                    <i class='fl'></i>
+                </span>40%至65%
+            </view>
+
+            <view class='answer_list'>
+                <span class='fl circle'>
+                    <i class='fl'></i>
+                </span>大于65%
+            </view>
+        </view>
+    </view>
+
+    <view class='page'>第<span>1</span>页/共<span>5</span>页</view>
+
+    <view class='btn_box'>
+        <view class='btn'>上一页</view>
+        <view class='btn on' bindtap='bindViewTap'>下一页</view>
+    </view>
+</view>

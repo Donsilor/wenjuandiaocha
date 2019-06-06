@@ -1,0 +1,52 @@
+<!--pages/my_questionnaire/index.wxml-->
+<view class='container'>
+  <view class='questionnaire_tit'>共填写问卷<span>992</span>份</view>
+  <view class='questionnaire_list clf'>
+    <view class='img_box fl'>
+      <image src='../../images/wen@2x.png'></image>
+    </view>
+    <span class='questionnaire_text'>风险风险承受能力评估问卷（个人投资者）</span>
+  </view>
+
+   <view class='questionnaire_list clf'>
+    <view class='img_box fl'>
+      <image src='../../images/wen@2x.png'></image>
+    </view>
+    <span class='questionnaire_text'>风险风险承受能力评估问卷（个人投资者）</span>
+  </view>
+
+   <view class='questionnaire_list clf'>
+    <view class='img_box fl'>
+      <image src='../../images/wen@2x.png'></image>
+    </view>
+    <span class='questionnaire_text'>风险风险承受能力评估问卷（个人投资者）</span>
+  </view>
+
+   <view class='questionnaire_list clf'>
+    <view class='img_box fl'>
+      <image src='../../images/wen@2x.png'></image>
+    </view>
+    <span class='questionnaire_text'>风险风险承受能力评估问卷（个人投资者）</span>
+  </view>
+
+   <view class='questionnaire_list clf'>
+    <view class='img_box fl'>
+      <image src='../../images/wen@2x.png'></image>
+    </view>
+    <span class='questionnaire_text'>风险风险承受能力评估问卷（个人投资者）</span>
+  </view>
+
+   <view class='questionnaire_list clf'>
+    <view class='img_box fl'>
+      <image src='../../images/wen@2x.png'></image>
+    </view>
+    <span class='questionnaire_text'>风险风险承受能力评估问卷（个人投资者）</span>
+  </view>
+
+   <view class='questionnaire_list clf'>
+    <view class='img_box fl'>
+      <image src='../../images/wen@2x.png'></image>
+    </view>
+    <span class='questionnaire_text'>风险风险承受能力评估问卷（个人投资者）</span>
+  </view>
+</view>

@@ -1,0 +1,90 @@
+/* pages/quiz/index.wxss */
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0
+}
+
+.question_list {
+    width: 690rpx;
+    background-color: #fff;
+    border-radius: 20rpx;
+    margin: 30rpx 30rpx 0;
+    padding: 30rpx;
+    box-sizing: border-box
+}
+
+.question_list .question {
+    font-size: 30rpx;
+    color: #000;
+    padding-bottom: 30rpx;
+    border-bottom: 1rpx solid #ccc
+}
+
+.question_list .answer .answer_list {
+    margin-top: 20rpx;
+    font-size: 30rpx;
+    color: #000
+}
+
+.question_list .answer .answer_list .circle {
+    width: 32rpx;
+    height: 32rpx;
+    border-radius: 50%;
+    border: 1rpx solid #ccc;
+    margin: 6rpx 20rpx 0 0;
+    box-sizing: border-box
+}
+
+.question_list .answer .answer_list .on {
+    border-color: #43b2ff
+}
+
+.question_list .answer .answer_list .on i {
+    width: 20rpx;
+    height: 20rpx;
+    background-color: #43b2ff;
+    border-radius: 50%;
+    margin: 5rpx
+}
+
+.page {
+    position: absolute;
+    left: 30rpx;
+    bottom: 172rpx;
+    font-size: 26rpx;
+    color: #666
+}
+
+.page span {
+    margin: 0 10rpx
+}
+
+.btn_box {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    left: 0;
+    bottom: 40rpx;
+    width: 100%;
+    height: 80rpx
+}
+
+.btn_box .btn {
+    width: 260rpx;
+    height: 80rpx;
+    background-color: #ccc;
+    border-radius: 40rpx;
+    font-size: 34rpx;
+    color: #fff;
+    text-align: center;
+    line-height: 80rpx;
+}
+
+.btn_box .on {
+    background-color: #43b2ff
+}
+

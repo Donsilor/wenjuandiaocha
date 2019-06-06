@@ -1,0 +1,115 @@
+/* pages/quiz/index.wxss */
+page{
+    background-color:#f0f0f0;
+}
+.container {
+
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0
+}
+
+.lists-box{
+    width: 690rpx;
+    height: auto;
+    background-color: #FFFFFF;
+    margin: auto;
+}
+
+.subject-box{
+    width: 630rpx;
+    height: auto;
+    background-color: #FFFFFF;
+    margin-top: 30rpx;
+    float: left;
+    border-radius:20rpx;
+    padding:30rpx;
+}
+
+
+.question {
+    width: 630rpx;
+    font-size:30rpx;
+    color:#000;
+    padding-bottom:30rpx;
+    border-bottom:1rpx solid #ccc;
+    display: block;
+    float: left;
+}
+
+.answer{
+    width: 630rpx;
+    display: block;
+    float: left;
+}
+
+.radio-list{
+    width: 100%;
+    float: left;
+    display: block;
+    font-size:30rpx;
+    color:#000;
+    margin-top: 20rpx;
+}
+
+.radio-list .radio-left{
+    width: 10%;
+    height: 100%;
+    display: block;
+    float: left;
+}
+
+.radio-list .radio-right{
+    width: 90%;
+    height: 100%;
+    display: block;
+    float: left;
+    line-height: 48rpx;
+}
+
+
+
+.page-box{
+    width: 690rpx;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+.page {
+    width: 690rpx;
+    font-size: 26rpx;
+    color: #666;
+    margin: 30rpx auto;
+    float: left;
+
+
+}
+
+.page span {
+    margin: 0 10rpx
+}
+
+.btn_box {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 80rpx;
+    margin: 40rpx 0;
+}
+
+.btn_box .btn {
+    width: 260rpx;
+    height: 80rpx;
+    background-color: #ccc;
+    border-radius: 40rpx;
+    font-size: 34rpx;
+    color: #fff;
+    text-align: center;
+    line-height: 80rpx;
+}
+
+.btn_box .on {
+    background-color: #43b2ff
+}
+

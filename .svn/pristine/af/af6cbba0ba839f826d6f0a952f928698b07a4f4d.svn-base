@@ -1,0 +1,16 @@
+<!--pages/homepage/index.wxml-->
+<view class='container'>
+
+
+  <block  wx:for="{{questionnaires}}" wx:key="id" wx:for-item="questionnairesInfo">
+      <view class='questionnaire_list' >
+        <view class='img_box'>
+          <image src='{{ResourceRootUrl}}{{questionnairesInfo.img_url}}'></image>
+        </view>
+        <view class='tit'>{{questionnairesInfo.title}}</view>
+        <view class='btn' data-id="{{questionnairesInfo.id}}" data-url="../questionnaires/info/index" bindtap="navigatorToUrl" >开始问卷</view>
+      </view>
+  </block>
+
+
+</view>

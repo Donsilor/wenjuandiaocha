@@ -1,0 +1,29 @@
+/**app.wxss**/
+
+page{ font-size: 12px; }
+/*html5 reset*/
+ul, li, ol {
+    list-style: none
+}
+h1, h2, h3, h4, h5, h6, em, i{
+    font-style: normal;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.hide{display:none}
+.fl {
+    float:left
+}
+.fr {
+    float:right;
+}
+.clf::after{
+  display: block;
+  content: '.';
+  height: 0;
+  clear: both;
+  opacity: 0;
+  visibility: hidden;
+}

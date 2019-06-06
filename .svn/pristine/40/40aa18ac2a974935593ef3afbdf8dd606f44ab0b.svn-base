@@ -1,0 +1,49 @@
+/* pages/homepage/index.wxss */
+page {
+    background-color: #f0f0f0
+}
+
+.container {
+
+}
+
+.questionnaire_list {
+    width: 690rpx;
+    height: 100%;
+    margin: 30rpx auto;
+    border-radius: 20rpx;
+    background-color: #fff;
+}
+
+.questionnaire_list .img_box {
+    width: 690rpx;
+    height: 400rpx;
+    border-radius: 20rpx 20rpx 0 0;
+}
+
+.questionnaire_list .img_box image {
+    width:690rpx;
+    height:400rpx;
+    border-radius:20rpx 20rpx 0 0;
+
+}
+
+.container .tit {
+    text-align: center;
+    font-size: 30rpx;
+    color: #333;
+    margin-top: 30rpx
+}
+
+.container .btn {
+    width: 300rpx;
+    height: 66rpx;
+    background-color: #43b2ff;
+    border-radius: 33rpx;
+    text-align: center;
+    line-height: 66rpx;
+    font-size: 34rpx;
+    margin: 30rpx auto;
+    color: #fff;
+    letter-spacing: 10rpx
+}

@@ -1,0 +1,13 @@
+<!--pages/my_questionnaire/index.wxml-->
+<view class='container'>
+    <view class='questionnaire_tit'>共填写问卷<span> {{pageData.total}} </span>份</view>
+
+    <block  wx:for="{{logData}}" wx:key="id" wx:for-item="logDataInfo">
+        <view class='questionnaire_list clf' data-id="{{logDataInfo.id}}" data-url="../questionnaires/result/index" bindtap="navigatorToUrl">
+            <view class='img_box fl'>
+                <image src='{{ResourceRootUrl}}{{logDataInfo.questionnaire_image}}'></image>
+            </view>
+            <span class='questionnaire_text'>{{logDataInfo.questionnaire_title}}</span>
+        </view>
+    </block>
+</view>
